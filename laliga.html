@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>La Liga - Fútbol Total</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<link rel="shortcut icon" href="images/balon-favicon.ico" type="image/x-icon">
+
+<style>
+    .table-container {
+        width: 100%;
+        margin-bottom: 30px;
+        background: #fff;
+        padding: 15px;
+        box-sizing: border-box;
+        border: 1px solid #e2e2e2;
+    }
+    
+    h2.table-title {
+        font-size: 20px;
+        color: #333;
+        border-bottom: 2px solid #b70000; /* Color rojo estilo fútbol */
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+    }
+
+    th {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: left;
+    }
+
+    td {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+        color: #555;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    tr:hover {
+        background-color: #f1f1f1;
+    }
+
+    .posicion { font-weight: bold; text-align: center; width: 40px; }
+    .puntos { font-weight: bold; color: #000; }
+    
+    /* Para poner Goleadores y Asistentes uno al lado del otro */
+    .col-half {
+        width: 48%;
+        float: left;
+    }
+    .col-right { float: right; }
+    
+    /* Ajuste para móvil: si la pantalla es pequeña, que se pongan uno debajo de otro */
+    @media (max-width: 768px) {
+        .col-half { width: 100%; float: none; }
+    }
+</style>
+
+</head>
+<body>
+
+<div id="header">
+  <div class="shell">
+    <h1 id="logo"><a href="index.html"></a></h1>
+  </div>
+</div>
+
+<div id="navigation">
+  <div class="shell">
+    <div class="cl">&nbsp;</div>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="laliga.html" class="active">La Liga</a></li> <li><a href="champions.html">Champions</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    <div class="cl">&nbsp;</div>
+  </div>
+</div>
+
+<div id="main">
+  <div class="shell">
+    
+    <div class="table-container">
+        <h2 class="table-title">Clasificación General</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th class="posicion">Pos</th>
+                    <th>Equipo</th>
+                    <th>PJ</th> <th>PG</th> <th>PE</th> <th>PP</th> <th class="puntos">Pts</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="posicion">1</td>
+                    <td>FC Barcelona</td>
+                    <td>19</td><td>16</td><td>1</td><td>2</td><td class="puntos">49</td>
+                </tr>
+                <tr>
+                    <td class="posicion">2</td>
+                    <td>Real Madrid</td>
+                    <td>19</td><td>14</td><td>3</td><td>2</td><td class="puntos">45</td>
+                </tr>
+                <tr>
+                    <td class="posicion">3</td>
+                    <td>Villareal</td>
+                    <td>17</td><td>12</td><td>2</td><td>3</td><td class="puntos">38</td>
+                </tr>
+                <tr>
+                    <td class="posicion">4</td>
+                    <td>Atletico Madrid</td>
+                    <td>19</td><td>11</td><td>5</td><td>3</td><td class="puntos">38</td>
+                </tr>
+                 <tr>
+                    <td class="posicion">5</td>
+                    <td>RCD Espanyol</td>
+                    <td>18</td><td>10</td><td>3</td><td>5</td><td class="puntos">33</td>
+                </tr>
+                </tbody>
+        </table>
+    </div>
+
+    <div style="overflow: hidden;"> <div class="table-container col-half">
+            <h2 class="table-title">Pichichi (Goleadores)</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="posicion">#</th>
+                        <th>Jugador</th>
+                        <th>Equipo</th>
+                        <th class="puntos">Goles</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="posicion">1</td>
+                        <td>Mbappé</td>
+                        <td>R. Madrid</td>
+                        <td class="puntos">18</td>
+                    </tr>
+                    <tr>
+                        <td class="posicion">2</td>
+                        <td>Ferran Torres</td>
+                        <td>FC Barcelona</td>
+                        <td class="puntos">11</td>
+                    </tr>
+                    <tr>
+                        <td class="posicion">3</td>
+                        <td>Muriqi</td>
+                        <td>Mallorca</td>
+                        <td class="puntos">10</td>
+                    </tr>
+                     <tr>
+                        <td class="posicion">4</td>
+                        <td>Lewandowski</td>
+                        <td>FC Barcelona</td>
+                        <td class="puntos">9</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="table-container col-half col-right">
+            <h2 class="table-title">Asistentes</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="posicion">#</th>
+                        <th>Jugador</th>
+                        <th>Equipo</th>
+                        <th class="puntos">Asist.</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="posicion">1</td>
+                        <td>Lamine Yamal</td>
+                        <td>FC Barcelona</td>
+                        <td class="puntos">7</td>
+                    </tr>
+                    <tr>
+                        <td class="posicion">2</td>
+                        <td>Luis Milla</td>
+                        <td>Getafe</td>
+                        <td class="puntos">7</td>
+                    </tr>
+                    <tr>
+                        <td class="posicion">3</td>
+                        <td>Rashford</td>
+                        <td>FC Barcelona</td>
+                        <td class="puntos">6</td>
+                    </tr>
+                    <tr>
+                        <td class="posicion">4</td>
+                        <td>Valverde</td>
+                        <td>R. Madrid</td>
+                        <td class="puntos">6</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div> <div class="cl">&nbsp;</div>
+  </div>
+</div>
+
+<div id="footer">
+  <div class="shell">
+    <div class="cl">&nbsp;</div>
+    <p class="left">© 2026 Fútbol Total</p>
+    <p class="right">Diseñado por Luis Mario Paticu Pardo</p>
+    <div class="cl">&nbsp;</div>
+  </div>
+</div>
+
+</body>
+</html>
